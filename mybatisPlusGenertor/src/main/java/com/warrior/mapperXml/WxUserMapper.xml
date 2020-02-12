@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.warrior.mapper.WxUserMapper">
+
+	<!-- 通用查询映射结果 -->
+	<resultMap id="BaseResultMap" type="com.warrior.entity.WxUser">
+		<id column="id" property="id" />
+		<result column="balance" property="balance" />
+		<result column="birthday" property="birthday" />
+		<result column="sex" property="sex" />
+		<result column="status" property="status" />
+		<result column="address" property="address" />
+		<result column="name" property="name" />
+		<result column="source" property="source" />
+		<result column="nickname" property="nickname" />
+		<result column="password" property="password" />
+		<result column="icon" property="icon" />
+		<result column="introduction" property="introduction" />
+		<result column="phone" property="phone" />
+		<result column="email" property="email" />
+		<result column="openid" property="openid" />
+		<result column="unionid" property="unionid" />
+		<result column="wxappid" property="wxappid" />
+		<result column="province_id" property="provinceId" />
+		<result column="city_id" property="cityId" />
+		<result column="area_id" property="areaId" />
+		<result column="create_time" property="createTime" />
+		<result column="update_time" property="updateTime" />
+	</resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        balance, id, birthday, sex, status, address, name, source, nickname, password, icon, introduction, phone, email, openid, unionid, wxappid, province_id AS provinceId, city_id AS cityId, area_id AS areaId, create_time AS createTime, update_time AS updateTime
+    </sql>
+
+</mapper>

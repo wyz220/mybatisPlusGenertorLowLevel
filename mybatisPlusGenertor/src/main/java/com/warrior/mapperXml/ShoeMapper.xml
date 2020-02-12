@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.warrior.mapper.ShoeMapper">
+
+	<!-- 通用查询映射结果 -->
+	<resultMap id="BaseResultMap" type="com.warrior.entity.Shoe">
+		<id column="shoe_id" property="shoeId" />
+		<result column="file_id" property="fileId" />
+		<result column="name" property="name" />
+		<result column="year" property="year" />
+		<result column="release_price" property="releasePrice" />
+		<result column="sn" property="sn" />
+		<result column="state" property="state" />
+		<result column="modify_date" property="modifyDate" />
+		<result column="create_date" property="createDate" />
+		<result column="shoe_type" property="shoeType" />
+		<result column="is_check" property="isCheck" />
+		<result column="author_id" property="authorId" />
+		<result column="evaluation_num" property="evaluationNum" />
+		<result column="user_num" property="userNum" />
+		<result column="color_num" property="colorNum" />
+		<result column="hot_num" property="hotNum" />
+	</resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        shoe_id AS shoeId, file_id AS fileId, name, year, release_price AS releasePrice, sn, state, modify_date AS modifyDate, create_date AS createDate, shoe_type AS shoeType, is_check AS isCheck, author_id AS authorId, evaluation_num AS evaluationNum, user_num AS userNum, color_num AS colorNum, hot_num AS hotNum
+    </sql>
+
+</mapper>
